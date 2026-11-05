@@ -26,6 +26,9 @@ jobs:
         flutter-version: '3.24.0'
         channel: 'stable'
     
+    - name: Create Android project
+      run: flutter create . --platforms android --project-name boss_agent_app
+    
     - name: Get dependencies
       run: flutter pub get
     
